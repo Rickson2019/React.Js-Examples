@@ -28,10 +28,12 @@ How about this?
 setItems(prevState => items.push(newItem));
 ```
 
-No, both of them won't work.
+Neither of them works.
 
 You should do the following to make it work:
 
 ```js
     setItems(prevState => [...prevState, newInput]);
 ```
+
+## map()
